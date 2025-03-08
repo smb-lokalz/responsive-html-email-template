@@ -3,17 +3,18 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>AtLokal Communications</title>
+    <title>AtLokal - Empowering Local Vendors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style media="all" type="text/css">
       /* -------------------------------------
     GLOBAL RESETS
 ------------------------------------- */
 
       body {
-        font-family: Helvetica, sans-serif;
+        font-family: 'Plus Jakarta Sans', Helvetica, sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 16px;
-        line-height: 1.3;
+        line-height: 1.5;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
       }
@@ -73,12 +74,12 @@
 
       .wrapper {
         box-sizing: border-box;
-        padding: 24px;
+        padding: 0 32px;
       }
 
       .footer {
         clear: both;
-        padding-top: 24px;
+        padding-bottom: 16px;
         text-align: center;
         width: 100%;
       }
@@ -96,11 +97,12 @@
 ------------------------------------- */
 
       p {
-        font-family: Helvetica, sans-serif;
+        font-family: 'Plus Jakarta Sans', Helvetica, sans-serif;
         font-size: 16px;
         font-weight: normal;
         margin: 0;
         margin-bottom: 16px;
+        text-align: left;
       }
 
       a {
@@ -226,7 +228,8 @@
       }
 
       .logo {
-        width: 140px;
+        width: 250px;
+        margin: 36px 0 12px 0;
       }
 
       /* -------------------------------------
@@ -247,7 +250,6 @@
         }
         .container {
           padding: 0 !important;
-          padding-top: 8px !important;
           width: 100% !important;
         }
         .main {
@@ -263,6 +265,20 @@
           font-size: 16px !important;
           max-width: 100% !important;
           width: 100% !important;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .feature-box {
+          padding: 8px;
+        }
+        
+        h1 {
+          font-size: 24px !important;
+        }
+        
+        .wrapper {
+          padding: 8px 16px !important;
         }
       }
       /* -------------------------------------
@@ -298,6 +314,48 @@
           line-height: inherit;
         }
       }
+
+      .feature-box {
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 8px 16px;
+        margin-bottom: 16px;
+        background: #ffffff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        transition: transform 0.2s;
+      }
+
+      .feature-title {
+        color: #3f51b5;
+        font-weight: 600;
+        font-size: 17px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .feature-title::before {
+        content: "→";
+        color: #3f51b5;
+        font-size: 20px;
+      }
+
+      .feature-description {
+        color: #64748b;
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .feature-section {
+        margin-bottom: 24px;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
     </style>
   </head>
   <body>
@@ -314,8 +372,7 @@
           <div class="content">
             <!-- START CENTERED WHITE CONTAINER -->
             <span class="preheader"
-              >Please confirm your email address to get started with
-              AtLokal.</span
+              >Don't Miss Out – Limited-Time Free Access to Premium Features on AtLokal!</span
             >
             <table
               role="presentation"
@@ -326,53 +383,61 @@
             >
               <!-- START MAIN CONTENT AREA -->
               <tr>
+                <td class="wrapper" style="text-align: center; padding: 8px 0 0;">
+                  <a href="https://vendor.atlokal.com" target="_blank">
+                    <img src="./atlokal.png" class="logo" alt="AtLokal Logo" width="160" height="auto" />
+                  </a>
+                  
+                  <h1 style="color: #3f51b5; font-size: 28px; margin: 8px 0 16px; line-height: 1.3;">
+                    Launch Your Business Online
+                  </h1>
+                </td>
+              </tr>
+              <tr>
                 <td class="wrapper">
-                  <p>Hi there,</p>
-                  <p>
-                    Thank you for signing up with <a class="text-link" href="https://atlokal.com">AtLokal</a>. To complete your
-                    registration and verify your email address, please click the
-                    button below.
+                  <p style="font-size: 15px; text-align: center;">Join early and get exclusive free access to premium features! AtLokal connects local vendors with their community through a powerful digital platform.</p>
+                  
+                  <div class="feature-section">
+                    <h2 style="color: #3f51b5; font-size: 18px; margin-top: 20px; margin-bottom: 16px;">What's in it for you?</h2>
+                    <div class="feature-box">
+                      <div class="feature-title">Digital Storefront & Community Presence</div>
+                      <p class="feature-description">Create your store, share your story, and get discovered by local customers</p>
+                    </div>
+                    <div class="feature-box">
+                      <div class="feature-title">Smart Business Tools</div>
+                      <p class="feature-description">Digital menu, scheduling, and essential business management features</p>
+                    </div>
+                  </div>
+
+                  <div class="feature-section">
+                    <h2 style="color: #3f51b5; font-size: 18px; margin-top: 20px; margin-bottom: 16px;">Upcoming Premium Features (Free for Early Adopters)</h2>
+                    <div class="feature-box">
+                      <div class="feature-title">AI-Powered Growth Suite</div>
+                      <p class="feature-description">Analytics dashboard, business insights, and smart order management</p>
+                    </div>
+                    <div class="feature-box">
+                      <div class="feature-title">Marketing & Integration Tools</div>
+                      <p class="feature-description">Social media integration and promotional tools to boost your reach</p>
+                    </div>
+                  </div>
+
+                  <div style="text-align: center; padding: 24px 0;">
+                    <a href="https://vendor.atlokal.com" target="_blank" 
+                       style="display: inline-block; padding: 16px 32px; 
+                              background: #3f51b5; color: white; 
+                              border-radius: 8px; text-decoration: none;
+                              font-weight: 600; font-size: 16px;
+                              box-shadow: 0 4px 6px rgba(63,81,181,0.2);">
+                      Create Your Store Today →
+                    </a>
+                    <p style="color: #64748b; font-size: 14px; margin-top: 12px;text-align: center;">
+                      No payment method required
+                    </p>
+                  </div>
+
+                  <p style="text-align: center; color: #64748b; font-size: 14px;">
+                    Need help? Contact <a class="text-link" href="mailto:info@atlokal.com">info@atlokal.com</a>
                   </p>
-                  <table
-                    role="presentation"
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    class="btn btn-primary"
-                  >
-                    <tbody>
-                      <tr>
-                        <td align="left">
-                          <table
-                            role="presentation"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                          >
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <a href="http://htmlemail.io" target="_blank"
-                                    >Confirm Your Email</a
-                                  >
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <p>
-                    If you did not sign up for an account, please ignore this
-                    email. This link will expire in 4 hours.
-                  </p>
-                  <p>
-                    If you have any questions, feel free to contact our support
-                    team at
-                    <a class="text-link" href="mailto:info@atlokal.com">info@atlokal.com</a>.
-                  </p>
-                  <p>Thanks again for joining AtLokal.</p>
                 </td>
               </tr>
 
@@ -380,24 +445,15 @@
             </table>
 
             <!-- START FOOTER -->
-            <div class="footer">
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-              >
-                <tr>
-                  <td class="content-block">
-                    <img src="./atlokal.png" class="logo" />
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block powered-by">
-                    Powered by AtLokal LLC
-                  </td>
-                </tr>
-              </table>
+            <div class="footer" style="text-align: center; padding: 24px 0;">
+              <div style="margin-bottom: 16px;">
+                <a href="https://vendor.atlokal.com/" target="_blank" style="color: #64748b; text-decoration: none; margin: 0 8px;">About</a>
+                <a href="https://vendor.atlokal.com/legal/terms" target="_blank" style="color: #64748b; text-decoration: none; margin: 0 8px;">Terms</a>
+                <a href="https://vendor.atlokal.com/legal/privacy" target="_blank" style="color: #64748b; text-decoration: none; margin: 0 8px;">Privacy</a>
+              </div>
+              <p style="color: #94a3b8; font-size: 13px; margin: 0;">
+                © 2025 AtLokal LLC. All rights reserved.
+              </p>
             </div>
 
             <!-- END FOOTER -->
